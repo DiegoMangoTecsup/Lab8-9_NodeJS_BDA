@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Detalle de Curso</title>
+    </head>
+    <body>
+        <div class="container">
+            <h3><a href="/cursos">Lista de Cursos</a></h3>
+            <h1>Detalle de Cursos</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Curso</td>
+                        <td>{{ curso.curso }}</td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de Inscripcion</td>
+                        <td>{{ curso.fecha_inscripcion }}</td>
+                    </tr>
+                    <tr>
+                        <td>Mensualidad</td>
+                        <td>{{ curso.mensualidad }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3><a href="/cursos/edit/{{ curso._id }}">EDIT</a></h3>
+            <form action="/cursos/delete/{{ curso._id }}" method="post">
+                <button type="submit">DELETE</button>
+            </form>
+        </div>
+    </body>
+</html>

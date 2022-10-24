@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>Crear Curso</title>
+    </head>
+    <body>
+        <div class="container">
+            <h3><a href="/cursos">Lista de Cursos</a></h3>
+            <h1>Crear Nuevo Curso</h1>
+            <form action="/cursos/save" method="post">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Curso</td>
+                            <td><input type="text" name="curso" /></td>
+                        </tr>
+                        <tr>
+                            <td>Fecha de Inscripcion</td>
+                            <td><input type="text" name="fecha_inscripcion" /></td>
+                        </tr>
+                        <tr>
+                            <td>Mensualidad</td>
+                            <td><input type="text" name="mensualidad" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit" value="Grabar" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
+
+
